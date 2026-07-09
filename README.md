@@ -2,7 +2,7 @@
 
 **How do different categories of geopolitical events affect WTI crude oil prices over short- and medium-term horizons?**
 
-This project categorizes 389 trading days of WTI crude oil prices (October 2024 – April 2026, sourced from [FRED](https://fred.stlouisfed.org/)) into four geopolitical regimes and measures how price behavior — both returns and volatility — differs across them. The original analysis was built in Excel (pivot tables, frequency distributions, descriptive statistics); a companion Python script independently reproduces the headline statistics.
+This project categorizes 389 trading days of WTI crude oil prices (October 2024 – April 2026, sourced from [FRED](https://fred.stlouisfed.org/)) into four geopolitical regimes and measures how price behavior, both returns and volatility, differs across them. The original analysis was built in Excel (pivot tables, frequency distributions, descriptive statistics); a companion Python script independently reproduces the headline statistics.
 
 ![WTI price timeline colored by regime](charts/price_timeline_by_regime.png)
 
@@ -27,14 +27,14 @@ WTI rose an average of **+33.4% over 30 trading days** during Military Escalatio
 
 **2. The volatility gap is statistically unambiguous.**
 
-Daily price volatility during Military Escalation (σ = 5.4%) was roughly **3x** that of Policy Uncertainty (σ = 1.8%), with **61% of escalation days moving more than 2%** in either direction. A Levene test confirms the variance difference is highly significant (W = 55.7, **p < 0.0001**). Notably, a Welch t-test on *mean* daily returns is not significant (p = 0.14) — the regime signal lives in the volatility and in multi-day cumulative returns, not in any single day's average move.
+Daily price volatility during Military Escalation (σ = 5.4%) was roughly **3x** that of Policy Uncertainty (σ = 1.8%), with **61% of escalation days moving more than 2%** in either direction. A Levene test confirms the variance difference is highly significant (W = 55.7, **p < 0.0001**). Notably, a Welch t-test on *mean* daily returns is not significant (p = 0.14), the regime signal lives in the volatility and in multi-day cumulative returns, not in any single day's average move.
 
 ![Daily volatility by regime](charts/daily_volatility_by_regime.png)
 
 **3. The findings translate into regime-based strategy recommendations.**
 
-- **Military escalation:** prices spike sharply and consistently — increase hedging and secure fuel contracts early.
-- **De-escalation:** most stable regime (lowest price dispersion, bulk of days trading in the $60–65 range) — delay major purchases while prices settle.
+- **Military escalation:** prices spike sharply and consistently, which means increase hedging and securing fuel contracts early.
+- **De-escalation:** most stable regime (lowest price dispersion, bulk of days trading in the $60–65 range): delay major purchases while prices settle.
 - **Geopolitical tension:** moderate upward drift (+3.7% over 30 days) — staggered procurement preserves flexibility.
 - **Policy uncertainty:** mixed, mildly negative signal — balanced hedging and close monitoring.
 
