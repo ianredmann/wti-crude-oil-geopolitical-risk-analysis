@@ -59,6 +59,5 @@ The script recomputes the per-regime return averages, volatility comparison, Lev
 
 ## Methodology & limitations
 
-Percent changes are measured in *trading days* (markets close on weekends), so "30-day" means 30 observations prior. Regime classification is based on qualitative judgment of trigger events, so boundaries involve some subjectivity, and overlapping regimes were excluded. Oil prices are influenced by many factors beyond geopolitics (production decisions, macro conditions, currency moves), so observed differences cannot be attributed exclusively to geopolitical events. Full discussion in the [written report](report/WTI_Geopolitical_Risk_Report.pdf).
-
+Percent changes are measured in *trading days* (markets close on weekends), so "30-day" means 30 observations prior. Regime classification is based on qualitative judgment of trigger events, so boundaries involve some subjectivity, and overlapping regimes were excluded. Oil prices are influenced by many factors beyond geopolitics (production decisions, macro conditions, currency moves), so observed differences cannot be attributed exclusively to geopolitical events. 
 *This is an academic analysis, not investment advice.*
